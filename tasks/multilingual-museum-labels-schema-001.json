@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-schema-001",
+  "title": "Content schemas (object/description/provenance/review/glossary) + CI structural check",
+  "project": "multilingual-museum-labels",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "translation", "licensing", "schema"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "multilingual-museum-labels produces plain-language, multilingual object descriptions for small museums, each with per-object license + attribution + provenance. Before any description is written, the project needs agent-neutral content schemas and a CI structural check so every object record, description, provenance, review, and glossary file is well-formed and conformant. The defining constraint is 'never invent an object': every factual claim must trace to a sourced fact, and rights for facts and image are tracked separately.",
+  "objective": "Add objectSchema, descriptionSchema, provenanceSchema, reviewSchema, and glossarySchema to packages/schema/src/schemas.ts (AJV / JSON Schema draft-07), expose them via validate.ts like taskSchema/registrySchema, and wire a structural-check script into pnpm test so CI fails on any malformed or non-conformant content artefact.",
+  "acceptanceCriteria": [
+    "objectSchema, descriptionSchema, provenanceSchema, reviewSchema, glossarySchema exported from packages/schema/src/schemas.ts and compiled/exposed via validate.ts (AJV with ajv-formats), matching the existing taskSchema/registrySchema pattern with no vendor or agent-specific logic",
+    "objectSchema captures separate factsRights and imageRights blocks, sourcedFacts[] each with a sourceRef, plus sensitivity, contestation, and eligibility fields",
+    "A structural-check script parses each YAML or Markdown-front-matter artefact to JSON, validates it against the right schema, and is wired into pnpm test so CI fails on any malformed or non-conformant file",
+    "pnpm build && pnpm test && pnpm lint all pass",
+    "A changeset is added for the user-facing schema additions and commits are signed off (DCO)"
+  ],
+  "resources": [
+    "C:/code/elyos/packages/schema/src/schemas.ts",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md",
+    "C:/code/elyos/CLAUDE.md",
+    "Getty AAT/ULAN/TGN, Dublin Core, schema.org/CreativeWork (terminology/metadata reference)"
+  ],
+  "output": "PR adding the five content schemas to packages/schema, validate.ts wiring, the structural-check script, and a README documenting the content-file schemas",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
