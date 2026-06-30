@@ -1,0 +1,37 @@
+{
+  "id": "multilingual-museum-labels-partner-001",
+  "title": "Secure first partner museum; written facts/image grant; agree objects + languages",
+  "project": "multilingual-museum-labels",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "partnership", "outreach", "governance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "All M2 tasks are gated on a secured partner museum. Until a small, under-resourced museum confirms in writing that it wants the work, owns or can license the catalogue facts, and will publish the result, verifiedNeed remains false and M2 cannot begin. The acting maintainer leads outreach in parallel with M0/M1, targeting local historical societies, community museums, museum-development networks, university teaching collections, and GLAM-Wikimedia partners. A pause/decision point occurs at end of M1 if no partner is secured.",
+  "objective": "Conduct outreach to secure a first partner museum: conduct ≥3 serious conversations with candidate small/under-resourced museums by end of M1; confirm a named museum in writing as the requestor; obtain a written facts/image rights grant (permitted use, derivatives, attribution/credit line, output license); agree an object list and target language(s); confirm reviewer coverage for the agreed languages. On completion, update related M2 task records with requestor and set verifiedNeed to true.",
+  "acceptanceCriteria": [
+    "≥3 serious conversations with candidate partner museums documented (contact, date, summary, outcome) before the end-of-M1 pause/decision point",
+    "A named small/under-resourced museum confirmed in writing as the first requestor: institution name, primary contact, and a written or email confirmation of intent",
+    "Written facts/image rights grant obtained specifying: permitted use (derivative plain-language descriptions), derivatives allowed, required attribution/credit line (verbatim), output license for descriptions and translations, and any restrictions",
+    "Agreed object list (≥25 objects for M2 target) and target language(s) documented and confirmed with the partner",
+    "Reviewer coverage confirmed for each agreed target language (qualified bilingual reviewer identified or a community partner engaged)",
+    "If no partner is secured by end of M1, an explicit go/pivot/hold decision is recorded by the acting maintainer (e.g., pivot to openly-licensed collections only)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§2 Problem & beneficiaries — partner types; §16 Open questions; roadmap M2)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (partner-001 acceptance criteria)",
+    "multilingual-museum-labels-reviewers-002 (reviewer roster — must be in place for reviewer coverage confirmation)",
+    "AAM (American Alliance of Museums) small-museum community",
+    "GLAM-Wikimedia partner network",
+    "Collections Trust / UK Museum Development networks",
+    "ICOM small-museum and community-museum networks"
+  ],
+  "output": "docs/partner-record.md — named partner museum, written grant summary, agreed object list and languages, reviewer coverage confirmation; decision record if pivot/hold at end of M1",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

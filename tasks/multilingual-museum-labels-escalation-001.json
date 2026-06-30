@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-escalation-001",
+  "title": "Sensitivity + legal-escalation procedure finalised + dry-run on a contrived example",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "cultural-sensitivity", "legal", "ethics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The cultural-sensitivity and legal-escalation classes were defined in guide-002, but M1 requires the end-to-end escalation procedure to be finalised and validated with a dry-run on contrived examples. Without a dry-run, there is no evidence the procedure actually routes sensitive-heritage and contested-legal objects correctly and that ungated material cannot reach sign-off. The dry-run must demonstrate both the sensitive-heritage route (source-community/cultural-authority review) and the contested-legal route (default omit; or attorney gate).",
+  "objective": "Finalise the end-to-end sensitivity and legal-escalation procedure as a standalone document, then perform a dry-run on: (1) a contrived sensitive-heritage example (e.g., a fictitious object classified sensitive-heritage) demonstrating the source-community/cultural-authority review path and that no description ships without that review recorded; and (2) a contrived contested-legal example (e.g., fictitious provenance touching restitution) demonstrating the default-omit path and what the attorney-gate path would require. Document the dry-run outcomes in the PR.",
+  "acceptanceCriteria": [
+    "Finalised escalation procedure document references guide-002 and specifies step-by-step decision trees for both sensitive-heritage and contested-legal routes, with named checkpoints and who records what in review.yaml",
+    "Dry-run on a contrived sensitive-heritage example: object classified sensitive-heritage, review.yaml escalation flag set, procedure demonstrates that the description cannot proceed to sign-off without source-community/cultural-authority review recorded; outcome documented in the PR",
+    "Dry-run on a contrived contested-legal example: text touching contested ownership/restitution classified contested-legal, procedure demonstrates the default-omit path; documents what an attorney-gate path would require (sign-off + jurisdiction-sourcing + 'not legal advice' framing + non-partisan) if ever invoked; outcome documented in the PR",
+    "Dry-run confirms that ungated material — a sensitive-heritage item without community review, or a contested-legal item without attorney sign-off — cannot reach the approved sign-off state in review.yaml",
+    "Document is consistent with guide-002 and references the CARE Principles for Indigenous Data Governance"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§8 Quality — escalation classes 1 and 2)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (escalation-001 acceptance criteria)",
+    "multilingual-museum-labels-guide-002 (cultural-sensitivity + contestation triage guide — must be in place)",
+    "CARE Principles for Indigenous Data Governance (https://www.gida-global.org/care)",
+    "C:/code/elyos/CLAUDE.md (refusal guardrails)"
+  ],
+  "output": "docs/escalation-procedure.md — finalised end-to-end sensitivity and legal-escalation procedure with dry-run outcomes documented in the PR",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

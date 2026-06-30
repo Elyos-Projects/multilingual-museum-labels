@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-maint-001",
+  "title": "Source/grant re-verification + glossary/guide maintenance cadence",
+  "project": "multilingual-museum-labels",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["museums", "heritage", "licensing", "maintenance", "provenance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "After delivery, the project must maintain object rights/grants, glossaries, and guides to remain accurate over time. Upstream sources or grants may change (a CC license may be amended, a partner grant may expire), which must be detected and actioned before further work or continued display. Glossaries and guides may need updating as heritage terminology evolves or new language pairs are added. Without a documented maintenance cadence, the project cannot sustain its quality and compliance guarantees post-delivery.",
+  "objective": "Define and document a recurring maintenance cadence covering: (1) re-verification of object rights/grants against stored snapshots (using the watcher-001 output to detect drift, then manual re-verification for flagged objects); (2) glossary and guide refresh cadence (when and how glossaries and guides are reviewed for accuracy and updated); and (3) a withdrawal procedure — the steps to follow if a source license changes to forbid reuse or a community or rights-holder requests removal of a delivered set.",
+  "acceptanceCriteria": [
+    "Documents the re-verification cadence for object rights/grants: frequency (e.g., quarterly or triggered by watcher-001 drift alert), who is responsible, and what re-verification entails (confirm license/grant still valid, update snapshotHash if changed, flag affected deliverables)",
+    "Documents the glossary and guide refresh cadence: frequency, trigger conditions (new language pair, terminology change, reviewer feedback), and who is responsible",
+    "Defines the withdrawal procedure: steps to follow if a source license changes to forbid reuse (identify affected objects and deliverables, notify partner museum, withdraw or update as required) or if a community or rights-holder requests removal (binding; immediate withdrawal; partner notification); provenance records used to scope the impact",
+    "Names a maintenance owner (maintainer or named sustainability owner) responsible for executing the cadence",
+    "Cadence and withdrawal procedure consistent with PLAN.md §15 Sustainability and rights-001 snapshot policy"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§15 Sustainability & maintenance; §7 Data, licensing & compliance — snapshot + watcher)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (maint-001 acceptance criteria)",
+    "multilingual-museum-labels-rights-001 (rights model + snapshot policy)",
+    "multilingual-museum-labels-watcher-001 (automated drift detection — feeds re-verification triggers)"
+  ],
+  "output": "docs/maintenance-cadence.md — documented re-verification cadence, glossary/guide refresh schedule, and withdrawal procedure",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

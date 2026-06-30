@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-reviewers-001",
+  "title": "Reviewer qualification criteria + onboarding (domain + bilingual + sensitivity)",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "review", "governance", "quality"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Before scaling to more objects and languages, the project needs objective, documented criteria for what makes someone a qualified reviewer. Without this, reviewer recruitment (reviewers-002) cannot proceed with a measurable bar, and reviewer independence/COI rules cannot be enforced consistently. This task depends on review-001 being complete.",
+  "objective": "Write a reviewer-qualification criteria and onboarding document that defines: objective criteria for a domain-aware reviewer (heritage/museum literacy; can verify factual fidelity + plain-language conformance); objective criteria for a qualified bilingual reviewer (native or near-native target language competence; heritage-translation experience); sensitivity-awareness requirements; the reviewer-independence rule (drafter may not be the sole reviewer); the COI-declaration requirement; the community/cultural-authority requirement for sensitive-heritage items; and the disagreement/conflict-resolution rule.",
+  "acceptanceCriteria": [
+    "Defines objective criteria for a domain-aware reviewer: specific knowledge areas (heritage/museum literacy, ability to verify factual fidelity against sources, familiarity with plain-language principles) and how competence is evidenced",
+    "Defines objective criteria for a qualified bilingual reviewer: native or near-native target language competence, heritage-translation competence, and how competence is evidenced (e.g., translation portfolio, bilingual education, museum/library background)",
+    "States the sensitivity-awareness requirement: reviewers for sensitive-heritage items must demonstrate understanding of CARE principles and community-authority review",
+    "States the reviewer-independence rule: the human who ran the drafting agent may not be the sole sign-off reviewer for that deliverable",
+    "States the COI-declaration requirement: each reviewer declares COI (or absence of it) in each review handoff",
+    "States the disagreement/conflict-resolution rule: reconcile against sources/glossary → escalate to third reviewer/maintainer → conservative reading wins; recorded in review.yaml"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§9 Governance, §8 Quality)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (reviewers-001 acceptance criteria)",
+    "multilingual-museum-labels-review-001 (reviewer checklist — must be in place)"
+  ],
+  "output": "docs/reviewer-qualifications.md — objective criteria and onboarding guide for domain-aware and bilingual reviewers",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

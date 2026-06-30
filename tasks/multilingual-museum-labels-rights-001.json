@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-rights-001",
+  "title": "Per-object two-layer rights model (facts vs. image) + source allow-list policy",
+  "project": "multilingual-museum-labels",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "licensing", "rights", "provenance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every object description the project produces has two distinct rights layers: (1) the catalogue facts/text the description is built from, and (2) any associated image. These are tracked separately because artwork copyright and photograph copyright differ, and modern/contemporary works may be in copyright even when their photograph is freely licensed. Before any object record is created, the project needs a formal policy documenting this model, the allowed source families, and the output-license decision rules.",
+  "objective": "Produce a dataset/policy document that formalises the per-object two-layer rights model (factsRights vs. imageRights), defines the allow-list of permitted source families (PD, CC0/CC BY/CC BY-SA, partner-supplied-under-grant), defines the output-license decision rules (CC BY 4.0 / CC BY-SA 4.0 / per-grant; never more permissive than source), and specifies snapshot requirements (committed copy + SHA-256 hash + web-archive URL).",
+  "acceptanceCriteria": [
+    "Documents the facts-vs-image rights distinction: why they are tracked separately and when each is required",
+    "Defines the allow-list of permitted source families: public-domain object data (with jurisdiction-specific PD caveat), CC0/CC BY/CC BY-SA open collections (honour attribution and share-alike terms), and partner-museum-supplied facts under a written grant; explicitly excludes all-rights-reserved, unverified, and scraped sources with reasons",
+    "Defines the output-license decision rule: CC BY 4.0 default for descriptions built on PD/open facts with no share-alike; CC BY-SA 4.0 where a source is share-alike; per-grant for partner-supplied facts; never more permissive than the source",
+    "Specifies snapshot requirements for each object record: committed copy of the governing license or grant document, SHA-256 hash, and web-archive URL where available",
+    "Defines the 'if unclear, do not produce' rule: any object with unverified or incompatible rights is excluded and the reason recorded"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§7 Data, licensing & compliance)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (rights-001 acceptance criteria)",
+    "C:/code/elyos/CLAUDE.md",
+    "Creative Commons license suite (CC0 / CC BY 4.0 / CC BY-SA 4.0)",
+    "CARE Principles for Indigenous Data Governance"
+  ],
+  "output": "docs/rights-model.md or data/rights-policy.yaml documenting the two-layer model, source allow-list, output-license rules, and snapshot specification; referenced by object.yaml and ingest tasks",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

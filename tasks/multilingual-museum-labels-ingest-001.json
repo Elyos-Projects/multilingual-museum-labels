@@ -1,0 +1,36 @@
+{
+  "id": "multilingual-museum-labels-ingest-001",
+  "title": "Ingest partner object facts + rights + sensitivity triage into object records",
+  "project": "multilingual-museum-labels",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "data", "licensing", "provenance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "After a partner museum is secured (partner-001), the partner's catalogue facts and rights grant must be ingested into structured object records before any description can be drafted. Each object requires a sourced object.yaml with per-claim sourceRefs, two-layer rights records (factsRights + imageRights), a snapshot of the rights grant, and a completed sensitivity and contestation triage. Ineligible, sensitive, or contested objects must be flagged and routed rather than produced by default. This task gates produce-001.",
+  "objective": "For each agreed partner object, create an object.yaml capturing: sourced catalogue facts with per-claim sourceRefs; factsRights and imageRights blocks with license, holder, and derivatives-allowed fields; a committed snapshot of the partner rights grant (SHA-256 hash + web-archive URL where available); a completed sensitivity and contestation triage per guide-002 (producing a sensitivity.class and contestation.class decision); provenance metadata (suppliedBy, verifiedBy, verifiedDate); and eligibility decision. Flag ineligible, sensitive, or contested objects for routing; do not produce descriptions for them by default.",
+  "acceptanceCriteria": [
+    "object.yaml created for each agreed partner object, validated against objectSchema from schema-001",
+    "Each object.yaml contains sourcedFacts[] with at least one sourceRef per factual claim drawn from the partner-supplied facts or open sources",
+    "factsRights and imageRights blocks populated for each object, referencing the written partner rights grant; a committed snapshot of the grant (SHA-256 hash + web-archive URL where available) is stored and referenced",
+    "Sensitivity and contestation triage completed per guide-002 for every object: sensitivity.class and contestation.class recorded; any sensitive-heritage or contested-legal object is flagged and routed — not silently queued for description",
+    "Eligibility decision recorded for every object (eligible: true/false with reason); ineligible objects documented with the disqualifying reason",
+    "Domain-aware reviewer and license reviewer sign-off recorded in the PR for the ingest batch"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 Architecture — pipeline step 1; §7 Data, licensing & compliance)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (ingest-001 acceptance criteria)",
+    "multilingual-museum-labels-partner-001 (partner record + rights grant — must be confirmed first)",
+    "multilingual-museum-labels-schema-001 (objectSchema — must be in place)",
+    "multilingual-museum-labels-guide-002 (sensitivity + contestation triage — must be in place)",
+    "multilingual-museum-labels-rights-001 (rights model policy)"
+  ],
+  "output": "objects/<objectId>/object.yaml for each agreed partner object, validated against objectSchema; ineligible/sensitive/contested objects flagged in the ingest report",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

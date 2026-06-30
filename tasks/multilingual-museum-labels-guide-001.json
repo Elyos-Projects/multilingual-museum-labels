@@ -1,0 +1,35 @@
+{
+  "id": "multilingual-museum-labels-guide-001",
+  "title": "Plain-language writing guide + reading-level targets (+ attestation fallback)",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "plain-language", "accessibility", "writing"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Museum labels must be understood by general visitors including non-native speakers, low-literacy adults, children, and people with cognitive or reading disabilities. The project treats plain language as a measured gate (CEFR A2-B1 / configured reading-level threshold), not an aspiration. Drafting agents and human reviewers need a concrete guide to apply consistently across all source-language descriptions.",
+  "objective": "Write a plain-language writing guide covering: the project's reading-level target (CEFR A2-B1 / Flesch-Kincaid-family threshold for English; reviewer attestation for languages without an automated metric); practical rules for short sentences, common vocabulary, defined jargon, active voice, and concrete description; the label scope (≈40-120 words, title/date/maker/materials/plain description); proper-noun and period-term handling; and the reviewer-attestation fallback wording for languages without automated readability metrics.",
+  "acceptanceCriteria": [
+    "States the configured reading-level target for source-language descriptions (CEFR A2-B1 / Flesch-Kincaid-family threshold for English) with the rationale",
+    "Provides concrete writing rules: sentences ≤20 words on average, common vocabulary over specialist jargon, jargon defined in-line or via glossary reference, active voice preferred, concrete and specific over abstract",
+    "Defines the standard label scope: title, date, maker/origin, materials/technique, and a 40-120-word plain-language description of what the object is and why it matters for a general visitor",
+    "Specifies how proper nouns, period terms, and material names are treated (preserve, do not simplify, reference the glossary for transliteration/do-not-translate items)",
+    "Provides the reviewer-attestation fallback wording for languages without reliable automated readability metrics",
+    "Is referenced by the reviewer checklist (review-001) and the structural-check CI tooling (tooling-001)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§5 Scope, §8 Quality)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (guide-001 acceptance criteria)",
+    "C:/code/elyos/CLAUDE.md",
+    "CEFR A2-B1 plain-language guidance",
+    "Flesch-Kincaid readability scale reference"
+  ],
+  "output": "guides/plain-language.md — a concise, self-contained guide for human and agent use when drafting source-language descriptions",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

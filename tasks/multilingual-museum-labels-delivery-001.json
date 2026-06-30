@@ -1,0 +1,35 @@
+{
+  "id": "multilingual-museum-labels-delivery-001",
+  "title": "Package + deliver set; confirm museum displays/publishes it",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "delivery", "licensing", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M2's definition of done requires not only that descriptions and translations are produced and reviewed, but that the completed set is delivered to and confirmed as displayed or published by the partner museum. A merged PR is not 'shipped'; only confirmed adoption constitutes the first true Definition of Shipped event. This task assembles the delivery package, hands it off to the partner, and records the museum's written confirmation of display or publication.",
+  "objective": "Assemble and deliver the complete label set to the partner museum: package descriptions, translations, provenance records, attribution/credit lines, disclaimers, and reviewer sign-offs into the partner's agreed delivery format; verify license-002 CI check is green for the entire set; hand off to the partner museum; and record in the PR the partner's written confirmation that the set is displayed or published. This is the first Definition of Shipped event for the project.",
+  "acceptanceCriteria": [
+    "Delivery package assembled in the partner's agreed format, containing: all ≥25 descriptions and translations, per-object provenance.yaml, attribution.txt (credit line + license + any required disclaimer), and reviewer sign-off records",
+    "license-002 CI check passes for every deliverable in the set before packaging",
+    "All required reviewer sign-offs present: domain-aware reviewer for each source description; qualified bilingual reviewer for each translation; community/legal reviewer for any escalated items",
+    "Package handed off to the partner museum via the agreed delivery method; hand-off date and method documented in the PR",
+    "Partner museum's written confirmation that the set is displayed or published is recorded in the PR (email, signed letter, or equivalent); merged-but-not-displayed does not satisfy this criterion",
+    "Delivery constitutes the first Definition of Shipped event; the result is recorded in the project registry and triggers outcome tracking (outcomes-001)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§8 Quality — Definition of Shipped; §6 — pipeline step 8)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (delivery-001 acceptance criteria)",
+    "multilingual-museum-labels-translate-001 (translated descriptions — must be complete)",
+    "multilingual-museum-labels-license-002 (license-check CI — must be green)",
+    "multilingual-museum-labels-partner-001 (partner record — delivery format agreed)"
+  ],
+  "output": "delivery/<partner-id>/ — packaged label set in the agreed format; docs/delivery-confirmation.md — written confirmation from the partner museum that the set is displayed or published",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}
