@@ -1,0 +1,37 @@
+{
+  "id": "multilingual-museum-labels-scale-001",
+  "title": "Produce + translate additional objects across ≥2 target languages",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "translation", "plain-language", "scaling"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M3's goal is to scale to more objects and languages with sustained quality. After the first partner delivery (delivery-001), additional objects from the same or a second partner museum must be produced in source language and translated into ≥2 target languages. Reviewer rotation (rotation-001) and outcome tracking (outcomes-001) must be active. All pipeline gates (readability, grounding, license-002, qualified reviewer) apply exactly as in M2.",
+  "objective": "Produce and deliver additional plain-language object descriptions beyond the initial ≥25, translating each into ≥2 agreed target languages, using the full M1 pipeline (license-002, watcher-001, glossary per language pair, escalation-001 procedure, reviewer-rotation roster). The resulting set should bring total adopted objects to ≥25 across ≥2 target languages, or onboard a second partner museum.",
+  "acceptanceCriteria": [
+    "Additional objects beyond the initial M2 set produced with reviewed source descriptions, each passing the full pipeline: sourced facts, readability gate, grounding check, domain-aware reviewer sign-off, license-002 CI green",
+    "Each additional object translated into ≥2 target languages, each translation passing qualified bilingual reviewer sign-off and license-002 CI check",
+    "Reviewer rotation (rotation-001) used: no single reviewer dominates the entire batch; load balancing documented",
+    "All escalated items (sensitive-heritage, contested-legal) handled per escalation-001 procedure; no ungated material delivered",
+    "Total adopted objects reach ≥25 across ≥2 target languages (or a second partner museum onboarded), confirmed by partner display/publication evidence",
+    "Outcome-tracking log (outcomes-001) updated with adoption status, any factual defects, and partner/visitor feedback for the new batch"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (roadmap M3; §4 Success metrics)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (scale-001)",
+    "multilingual-museum-labels-delivery-001 (first delivery — must be complete)",
+    "multilingual-museum-labels-rotation-001 (reviewer rotation — must be operating)",
+    "multilingual-museum-labels-outcomes-001 (outcome tracking — must be live)",
+    "multilingual-museum-labels-license-002 (license-check CI)",
+    "multilingual-museum-labels-escalation-001 (escalation procedure)"
+  ],
+  "output": "objects/<objectId>/descriptions/<lang>.md across additional objects in ≥2 target languages; updated project registry with adoption evidence; updated outcomes-001 log",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

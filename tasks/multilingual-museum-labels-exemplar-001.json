@@ -1,0 +1,39 @@
+{
+  "id": "multilingual-museum-labels-exemplar-001",
+  "title": "Plain-language source descriptions for ≥3 openly-licensed exemplar objects",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "plain-language", "writing", "provenance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project must prove its end-to-end pipeline on openly-licensed exemplar objects before partner adoption. The defining constraint is 'never invent an object': every factual claim in a description must trace to a sourced, attributed catalogue fact. Descriptions are label-sized (≈40-120 words) and meet the plain-language reading-level target. This task is blocked until license-000 passes for all chosen objects, and depends on schema-001, rights-001, guide-001, and guide-002 being in place.",
+  "objective": "Write plain-language source descriptions for ≥3 openly-licensed exemplar objects, each description: written strictly from sourced facts (every claim maps to a sourceRef in the object.yaml); label-sized (≈40-120 words); meeting the configured readability target (or carrying reviewer attestation); preserving proper nouns/dates/materials; neutral on any contested point; and accompanied by a completed review.yaml with agent uncertainty flags captured, resolved, or escalated before reviewer sign-off.",
+  "acceptanceCriteria": [
+    "≥3 exemplar objects selected from openly-licensed/PD sources, each passing the license-000 prerequisite (facts licensable, credit line confirmed, image decision made)",
+    "Each description is written strictly from sourced facts — every factual claim maps to a sourceRef in the object.yaml; no invented content",
+    "Each description is label-sized (≈40-120 words), meets the plain-language reading-level target per guide-001 (or carries reviewer plain-language attestation), and preserves proper nouns/dates/materials/period terms",
+    "Each description is neutral on any contested point; any contested fact is noted with attribution or omitted per guide-002",
+    "Sensitivity/contestation triage run on each object per guide-002; any sensitive-heritage or contested-legal object is escalated or excluded — not silently written",
+    "All agent UNCERTAIN flags captured in review.yaml as agentFlags; no sign-off recorded while any flag is unresolved; unresolved grounding flags result in claim removal",
+    "Domain-aware reviewer sign-off recorded in the PR (reviewer independent of drafting, COI declared); per-object license, attribution/credit line, and provenance present and verified"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 Solution approach — pipeline steps 1-4)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (exemplar-001 acceptance criteria)",
+    "multilingual-museum-labels-schema-001 (object/description/review schemas)",
+    "multilingual-museum-labels-rights-001 (rights model)",
+    "multilingual-museum-labels-guide-001 (plain-language guide)",
+    "multilingual-museum-labels-guide-002 (cultural-sensitivity guide)",
+    "multilingual-museum-labels-license-000 (BLOCKING prerequisite — must pass first)",
+    "Wikimedia Commons / Wikidata GLAM open data (candidate exemplar sources)"
+  ],
+  "output": "objects/<objectId>/descriptions/<lang>.md for ≥3 objects; objects/<objectId>/object.yaml; objects/<objectId>/review.yaml; objects/<objectId>/attribution.txt; objects/<objectId>/provenance.yaml",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

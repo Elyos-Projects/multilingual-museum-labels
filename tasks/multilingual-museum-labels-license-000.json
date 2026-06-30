@@ -1,0 +1,35 @@
+{
+  "id": "multilingual-museum-labels-license-000",
+  "title": "BLOCKING: confirm facts licensable + credit line + image decision for each exemplar object",
+  "project": "multilingual-museum-labels",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "licensing", "rights", "research"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "No description may be drafted until a license prerequisite is confirmed for each exemplar object. This task is explicitly BLOCKING for exemplar-001: before any plain-language description is written, the maintainer/license reviewer must confirm and record (a) the facts are licensable for a derivative plain-language description, (b) the required verbatim attribution/credit line, and (c) the image rights decision. Any object that cannot be confirmed is rejected and replaced with another openly-licensed object.",
+  "objective": "For each chosen exemplar object, research and record: (a) that the facts/text are licensable for a derivative plain-language description (open license or written grant — confirmed, not assumed); (b) the required verbatim attribution/credit line as specified by the source; (c) the image rights decision (include with verified compatible license, or exclude). Record findings in each object's object.yaml and produce a summary license-prerequisite document. exemplar-001 must not start until this task passes for all chosen objects.",
+  "acceptanceCriteria": [
+    "For each exemplar object: confirms in writing that the facts/text are licensable for a derivative plain-language description, citing the specific open license or grant",
+    "For each exemplar object: records the required verbatim attribution/credit line exactly as specified by the source",
+    "For each exemplar object: records the image rights decision (include with licence URL and holder, or exclude with reason); does not assume an image is freely licensed without explicit verification",
+    "Any object that cannot be confirmed for all three items is rejected and a replacement openly-licensed object is selected and confirmed instead",
+    "Results recorded in each object.yaml's factsRights and imageRights blocks and in a summary license-prerequisite document committed to the repo",
+    "exemplar-001 is explicitly unblocked only after this task is complete and accepted"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§7 — BLOCKING prerequisite)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (license-000 acceptance criteria)",
+    "multilingual-museum-labels-rights-001 (rights model — must be in place)",
+    "Wikimedia Commons / Wikidata GLAM open data (candidate exemplar sources)",
+    "Creative Commons license suite"
+  ],
+  "output": "docs/license-prerequisite.md — per-object license confirmation record; object.yaml factsRights and imageRights populated for each exemplar object",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

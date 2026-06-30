@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-guide-002",
+  "title": "Cultural-sensitivity + contestation triage guide (CARE; sensitive-heritage; legal-escalation)",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "cultural-sensitivity", "indigenous-rights", "ethics", "legal"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Two content classes require escalated gates above the standard medium risk tier: (1) culturally sensitive heritage (human/ancestral remains, sacred/ceremonial objects, Indigenous or community-affiliated material) requires source-community or cultural-authority review under CARE principles, with a binding community veto including 'do not describe/image/display'; (2) text touching contested legal ownership, restitution, or repatriation is HIGH risk and requires a licensed cultural-property-law attorney sign-off, or is omitted by default. Without a structured triage guide, these risks cannot be managed consistently.",
+  "objective": "Write a cultural-sensitivity and contestation triage guide that: defines the sensitivity classes (none | sensitive-heritage | restricted) and contestation classes (none | noted | contested-legal); specifies the CARE-aligned source-community/cultural-authority review requirement for sensitive-heritage items (binding community veto, incl. 'do not describe/image/display'); specifies the HIGH-risk legal-escalation procedure for contested-legal items (default omit; else licensed cultural-property-attorney sign-off + jurisdiction-sourcing + 'not legal advice' framing + non-partisan); and provides a concrete triage checklist for use before any description is drafted.",
+  "acceptanceCriteria": [
+    "Defines sensitivity classes: none, sensitive-heritage (human/ancestral remains, sacred/ceremonial objects, Indigenous or community-affiliated material), and restricted (embargoed/not-for-public-display); and contestation classes: none, noted (contestation may be neutrally noted with attribution), and contested-legal (ownership/restitution/repatriation touching legal title)",
+    "Specifies the CARE-aligned source-community/cultural-authority review requirement for sensitive-heritage items, including: who constitutes an appropriate reviewer, the binding nature of community decisions (including 'do not describe, image, or display'), and that no such object may proceed to drafting without that review recorded in review.yaml",
+    "Specifies the HIGH-risk legal-escalation procedure: default action is omit; if a partner specifically requests neutral contestation noting, it requires sign-off by a licensed attorney competent in cultural-property/heritage law for the relevant jurisdiction, jurisdiction-sourced citations, strictly non-partisan framing (note claim and counter-claim with attribution, assert no winner), and an explicit 'This is general information, not legal advice' disclaimer; no HIGH-risk text merges without attorney sign-off recorded in the PR",
+    "Provides a concrete triage checklist to be run on each object before drafting, producing a sensitivity.class and contestation.class decision recorded in object.yaml",
+    "Is consistent with PLAN.md §8 escalation classes and references the CARE Principles for Indigenous Data Governance"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§8 Quality — escalation classes 1 and 2)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (guide-002 acceptance criteria)",
+    "C:/code/elyos/CLAUDE.md (refusal guardrails)",
+    "CARE Principles for Indigenous Data Governance (https://www.gida-global.org/care)",
+    "Getty AAT cultural-materials vocabulary"
+  ],
+  "output": "guides/cultural-sensitivity.md — triage guide covering sensitivity classes, contestation classes, CARE-aligned review requirements, and HIGH-risk legal-escalation procedure",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

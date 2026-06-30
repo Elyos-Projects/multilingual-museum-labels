@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-watcher-001",
+  "title": "Automated source/grant-change watcher (hash-diff vs. snapshots)",
+  "project": "multilingual-museum-labels",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "licensing", "provenance", "automation"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Object records store a snapshot (committed copy + SHA-256 hash + web-archive URL) of the governing license or grant at the time of ingest. If the upstream source or grant later changes — a license is amended, a CC collection changes terms, or a partner grant expires — the project must detect the drift before any further work or delivery proceeds on the affected object. M0 relied on a minimal/manual check; M1 requires this to be automated and running on a schedule or in CI.",
+  "objective": "Build a source/grant-change watcher script that: for each object record, re-fetches the allow-listed source URL or grant document; recomputes the SHA-256 hash; compares it against the stored snapshotHash in the object record; and emits a drift-detected warning for any mismatch, flagging the affected object(s) for re-verification before further work or delivery. Wire the script to run on a schedule (e.g., via CI cron or a scheduled workflow) and ensure flagged objects cannot proceed to new description or delivery tasks until re-verified.",
+  "acceptanceCriteria": [
+    "Script re-fetches each allow-listed source URL or grant document referenced in object records, recomputes the SHA-256 hash, and compares against the stored snapshotHash",
+    "Emits a clear drift-detected warning (logged and optionally as a CI failure or GitHub issue) for any object whose current upstream hash does not match the stored snapshot",
+    "Flagged objects are clearly identified so re-verification can be completed before any further description, translation, or delivery work proceeds",
+    "Script runs on a defined schedule (CI cron or equivalent) as well as on demand; schedule and re-verification gate documented",
+    "Script follows the agent-neutral core pattern: no vendor-specific logic; pnpm build && pnpm test && pnpm lint pass; a changeset is added and commits are signed off (DCO)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§7 — snapshot integrity + source/grant-change watcher)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (watcher-001 acceptance criteria)",
+    "multilingual-museum-labels-rights-001 (rights model — snapshot requirements)",
+    "multilingual-museum-labels-schema-001 (object schema — snapshotHash field)",
+    "C:/code/elyos/CLAUDE.md (architecture: no vendor logic in core)"
+  ],
+  "output": "PR adding source/grant-change watcher script and CI schedule configuration; drift-detected objects flagged for re-verification",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

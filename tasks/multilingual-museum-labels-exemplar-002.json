@@ -1,0 +1,36 @@
+{
+  "id": "multilingual-museum-labels-exemplar-002",
+  "title": "Translate the ≥3 exemplar descriptions into 1 target language",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "translation", "plain-language", "review"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0's definition of done requires ≥3 openly-licensed exemplar objects taken end-to-end to a plain-language source description plus at least 1 reviewed target-language translation each. This task translates the exemplar source descriptions (exemplar-001) into 1 target language, using the language-pair glossary (glossary-001) to preserve proper nouns, period terms, and plain-ness. A qualified bilingual reviewer must sign off on each translation before it is considered done.",
+  "objective": "Translate the ≥3 approved exemplar source descriptions into 1 target language: apply the language-pair glossary (glossary-001) throughout; preserve all proper nouns, dates, materials, and period terms per the glossary's preserve/transliterate conventions; preserve plain-ness (do not introduce jargon or complex constructions in the target language); flag any uncertainty with UNCERTAIN tags; and obtain qualified bilingual reviewer sign-off recorded in review.yaml and the PR.",
+  "acceptanceCriteria": [
+    "Each of the ≥3 exemplar descriptions from exemplar-001 is translated into the chosen target language",
+    "Glossary-001 applied throughout: glossary terms used consistently, proper nouns handled per preserve/transliterate/do-not-translate conventions",
+    "Plain-ness preserved in the target language: translations are label-sized, clear, and jargon-free for a general visitor in the target language",
+    "All agent UNCERTAIN flags captured in review.yaml agentFlags and resolved before reviewer sign-off; grounding flags result in claim review not translation of a potentially erroneous source claim",
+    "Qualified bilingual reviewer sign-off (native or near-native target language with heritage-translation competence) recorded in the PR and review.yaml; reviewer independent of translator, COI declared",
+    "Per-translation attribution/credit line and output license (source-compatible, never more permissive than source) recorded in attribution.txt for each translated description"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 — pipeline steps 5-6)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (exemplar-002)",
+    "multilingual-museum-labels-exemplar-001 (source descriptions — must be approved first)",
+    "multilingual-museum-labels-glossary-001 (language-pair glossary — must exist)",
+    "multilingual-museum-labels-review-001 (reviewer checklist)",
+    "multilingual-museum-labels-review-002 (reviewer-handoff template)"
+  ],
+  "output": "objects/<objectId>/descriptions/<tgt-lang>.md for each of the ≥3 objects; updated review.yaml and attribution.txt for each object",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

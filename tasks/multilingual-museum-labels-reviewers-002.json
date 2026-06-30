@@ -1,0 +1,35 @@
+{
+  "id": "multilingual-museum-labels-reviewers-002",
+  "title": "Recruit ≥2 qualified reviewers or engage a museum/GLAM-Wikimedia community",
+  "project": "multilingual-museum-labels",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "review", "community", "outreach"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1's definition of done requires ≥2 qualified reviewers or a partner museum/GLAM-Wikimedia community engaged. Without reviewers, no description or translation can be signed off, and the pipeline cannot scale. Reviewer recruitment must follow the qualification criteria defined in reviewers-001. Candidate channels include museum networks, GLAM-Wikimedia partners, and academic or heritage-professional communities.",
+  "objective": "Conduct outreach to recruit ≥2 qualified reviewers (one domain-aware and at least one qualified bilingual for the first target language) or to engage a museum network / GLAM-Wikimedia community that can provide ongoing review coverage. Document the outreach process, candidate channels, conversations, and outcome (named reviewers or community partner) in a recruitment report.",
+  "acceptanceCriteria": [
+    "Outreach conducted across ≥2 candidate channels (e.g., museum networks such as AAM small-museum community, GLAM-Wikimedia partner communities, regional museum associations, academic heritage departments)",
+    "≥2 qualified reviewers recruited who meet the criteria in reviewers-001 (or a museum/GLAM-Wikimedia community partner engaged that can provide review coverage), with their names/handles and qualified-reviewer roles recorded",
+    "Each reviewer's qualification confirmed against reviewers-001 criteria and recorded in a reviewer roster document committed to the repo",
+    "Recruitment process, outreach channels, response rates, and final outcome documented in a report",
+    "If fewer than 2 qualified reviewers are available for a target language, this is escalated to the maintainer/steward with a recommendation (e.g., limit scope to languages with coverage)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§9 Governance, §11 Dependencies)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (reviewers-002)",
+    "multilingual-museum-labels-reviewers-001 (qualification criteria — must be in place first)",
+    "AAM (American Alliance of Museums) small-museum community",
+    "GLAM-Wikimedia partner network",
+    "Collections Trust / UK Museum Development networks"
+  ],
+  "output": "docs/reviewer-roster.md — named qualified reviewers (or community partner) with qualification evidence and roles; docs/reviewer-recruitment-report.md documenting the outreach process",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

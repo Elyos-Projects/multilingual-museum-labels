@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-rotation-001",
+  "title": "Reviewer rotation + load balancing",
+  "project": "multilingual-museum-labels",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["museums", "heritage", "review", "governance", "maintenance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "As the project scales (scale-001), relying on a single reviewer for each role risks a bottleneck and reviewer burnout. M3 requires a reviewer rotation and load-balancing scheme to be established so that no one reviewer is required for every batch and substitutes are identified. This depends on ≥2 qualified reviewers (reviewers-002) being available and requires a published rotation policy.",
+  "objective": "Define and document a reviewer rotation and load-balancing policy: specify how review assignments are distributed across the qualified reviewer pool; define the minimum frequency at which each reviewer rotates onto a batch; define a substitute/backup assignment process for when a primary reviewer is unavailable; specify how the rotation is recorded (e.g., in each review.yaml); and update the reviewer roster (from reviewers-002) to reflect rotation assignments.",
+  "acceptanceCriteria": [
+    "Rotation policy document specifies how domain-aware reviewer and bilingual reviewer assignments are distributed across the qualified reviewer pool so no single reviewer handles every batch",
+    "Defines minimum rotation frequency (e.g., no reviewer handles more than N consecutive batches without rotation) and how exceptions are approved by the maintainer",
+    "Defines a substitute/backup assignment process: who approves, how the substitute's qualification is confirmed, and how the substitution is recorded",
+    "Specifies where rotation assignments are recorded (e.g., a field in review.yaml or a rotation log file)",
+    "Reviewer roster updated to reflect current rotation assignments; policy consistent with the independence and COI rules in reviewers-001"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§15 Sustainability; roadmap M3)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (rotation-001)",
+    "multilingual-museum-labels-reviewers-002 (qualified reviewer roster — must be in place)",
+    "multilingual-museum-labels-reviewers-001 (qualification criteria + independence rules)"
+  ],
+  "output": "docs/reviewer-rotation.md — rotation and load-balancing policy; updated docs/reviewer-roster.md with rotation assignments",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

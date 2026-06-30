@@ -1,0 +1,37 @@
+{
+  "id": "multilingual-museum-labels-produce-001",
+  "title": "Produce ≥25 plain-language source descriptions from partner facts",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "plain-language", "writing", "provenance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "After partner object records are ingested (ingest-001), the project must produce the actual plain-language descriptions that the partner museum will display. M2's definition of done requires ≥25 objects with reviewed source descriptions. Every description must be written strictly from sourced facts in the object.yaml, must meet the plain-language reading-level target, must be neutral on any contested point, and must pass domain-aware reviewer sign-off before it may proceed to translation. The 'never invent an object' constraint is absolute.",
+  "objective": "For each eligible ingested partner object, draft a label-sized (≈40-120 word) plain-language source description written strictly from the sourced facts in the object.yaml: every factual claim maps to a sourceRef; the description meets the configured readability target per guide-001 (or carries reviewer attestation); proper nouns, dates, materials, and period terms are preserved; the description is neutral on any contested point per guide-002. Capture all agent UNCERTAIN flags in review.yaml. Obtain domain-aware reviewer sign-off for each description.",
+  "acceptanceCriteria": [
+    "≥25 plain-language source descriptions produced, one per eligible ingested partner object",
+    "Each description is written strictly from sourced facts: every factual claim maps to a sourceRef in the object.yaml; no invented or unverified content",
+    "Each description is label-sized (≈40-120 words), meets the plain-language reading-level target per guide-001 (or carries reviewer plain-language attestation), and preserves all proper nouns, dates, materials, and period terms",
+    "Each description is neutral on contested points per guide-002; any contested claim is noted with attribution or omitted; sensitivity/contestation triage confirmed for each object",
+    "All agent UNCERTAIN flags captured in review.yaml as agentFlags before review; no sign-off recorded while any flag is unresolved; unresolved grounding flags result in claim removal",
+    "Domain-aware reviewer sign-off recorded in the PR for each description (reviewer independent of drafting, COI declared); per-object license, attribution/credit line, and provenance present and verified"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 Architecture — pipeline steps 3-4; §8 Quality)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (produce-001)",
+    "multilingual-museum-labels-ingest-001 (partner object records — must be complete)",
+    "multilingual-museum-labels-guide-001 (plain-language writing guide)",
+    "multilingual-museum-labels-tooling-001 (readability + grounding check scripts — must be green)",
+    "multilingual-museum-labels-review-001 (reviewer checklist)",
+    "multilingual-museum-labels-review-002 (reviewer-handoff template)"
+  ],
+  "output": "objects/<objectId>/descriptions/<src-lang>.md for ≥25 partner objects; objects/<objectId>/review.yaml; objects/<objectId>/attribution.txt; objects/<objectId>/provenance.yaml",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-review-001",
+  "title": "Reviewer checklist (fidelity, plain-language, terminology, neutrality, cultural, privacy)",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "review", "plain-language", "quality"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every description and translation must pass qualified human reviewer sign-off before it is considered done. Reviewers need a structured checklist that covers all required review dimensions so that sign-off is consistent, documented, and enforceable in CI. The checklist depends on the plain-language guide (guide-001) and the cultural-sensitivity guide (guide-002) being in place.",
+  "objective": "Create a reviewer checklist template covering all required review dimensions: factual fidelity to sourced facts (every claim maps to a sourceRef, no invented content), plain-language conformance (reading-level target met or attested), terminology and proper-noun accuracy (glossary applied, no mangled names/dates/materials), neutrality (no editorialising on contested histories), cultural appropriateness (sensitivity triage confirmed; no ungated sensitive-heritage or contested-legal content), privacy and defamation (no sensitive personal data, no unverified statements about living people), and agent-flag resolution (all UNCERTAIN flags resolved or accepted-with-reasoning).",
+  "acceptanceCriteria": [
+    "Covers all required dimensions: factual fidelity, plain-language conformance, terminology/proper-noun accuracy, neutrality, cultural appropriateness, privacy/defamation, and agent-flag resolution",
+    "For translations specifically, adds a bilingual fidelity dimension: meaning preserved, proper nouns not translated, plain-ness preserved in the target language",
+    "Includes a 'reviewer independence' declaration field: reviewer is not the sole drafter and has declared COI",
+    "Each checklist item is a concrete yes/no or pass/fail question, not a vague aspiration",
+    "Is consistent with the review dimensions described in PLAN.md §8 and references guide-001 and guide-002",
+    "Designed to be used with the reviewer-handoff template (review-002) and recorded in review.yaml"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§8 Quality)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (review-001)",
+    "multilingual-museum-labels-guide-001 (plain-language guide — must exist first)",
+    "multilingual-museum-labels-guide-002 (cultural-sensitivity guide — must exist first)"
+  ],
+  "output": "templates/reviewer-checklist.md — structured checklist for domain-aware and bilingual reviewer sign-off",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

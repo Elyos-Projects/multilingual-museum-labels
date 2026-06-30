@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-tooling-001",
+  "title": "Readability check + claim-to-source grounding self-check script",
+  "project": "multilingual-museum-labels",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "tooling", "plain-language", "quality"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project treats plain language as a measured gate, not an aspiration. Agents self-check descriptions with a readability tool and a claim-to-source grounding pass before human review. These tools need to be scripted, wired into pnpm test, and green in CI. They depend on schema-001 (for the content file structure) and guide-001 (for the reading-level targets).",
+  "objective": "Build two CI scripts: (1) a readability-check script that parses each description file, computes the configured readability metric (Flesch-Kincaid-family for English; reviewer-attestation for languages without a metric), and fails CI if the threshold is not met and no attestation is present; (2) a claim-to-source grounding self-check script that parses each description's sourcedFacts references against the object.yaml and flags any description claim that has no corresponding sourceRef, emitting UNCERTAIN:grounding flags into review.yaml. Both are wired into pnpm test.",
+  "acceptanceCriteria": [
+    "Readability-check script parses each description Markdown file, computes the configured metric for the language (Flesch-Kincaid-family for English), and fails with a clear error if the reading-level threshold is not met and no reviewer plain-language attestation is present in review.yaml",
+    "Claim-to-source grounding self-check script validates that every factual claim in a description has a corresponding sourceRef in the object.yaml, and emits UNCERTAIN:grounding flags into review.yaml for any ungrounded claim",
+    "Both scripts are wired into pnpm test so CI fails if any description fails readability or grounding checks",
+    "Scripts follow the agent-neutral core pattern: no vendor-specific logic; live in packages/ or a scripts/ directory consistent with the project structure",
+    "pnpm build && pnpm test && pnpm lint pass; a changeset is added and commits are signed off (DCO)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 — pipeline steps 3-4)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (tooling-001)",
+    "multilingual-museum-labels-schema-001 (content schemas — must be in place)",
+    "multilingual-museum-labels-guide-001 (reading-level targets)",
+    "C:/code/elyos/CLAUDE.md (architecture rules: no vendor logic in core)"
+  ],
+  "output": "PR adding readability-check script and claim-to-source grounding self-check script, wired into pnpm test",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

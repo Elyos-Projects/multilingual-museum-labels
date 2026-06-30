@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-glossary-001",
+  "title": "Glossary for 1 language pair (terms, proper nouns, transliteration, do-not-translate)",
+  "project": "multilingual-museum-labels",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "translation", "terminology", "glossary"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Museum heritage translation is error-prone on proper nouns, period terms, material names, and culture-specific vocabulary. A controlled glossary for each language pair ensures that terminology is consistent across descriptions and reviewable by bilingual reviewers. The glossary must also specify proper-noun conventions (preserve vs. transliterate), transliteration rules, and a do-not-translate list to prevent the most common translation errors. The glossary schema (objectSchema/glossarySchema from schema-001) must be in place before this task.",
+  "objective": "Build an initial glossary YAML for 1 language pair (source language → first target language) with ≥40 entries, covering: heritage/art-history terminology (object types, materials, techniques, periods); proper nouns (artist names, place names, period names) with preserve/transliterate conventions; a transliteration table where applicable; and a do-not-translate list (proper nouns and specialised terms to preserve verbatim in the target language).",
+  "acceptanceCriteria": [
+    "YAML file validated against glossarySchema from schema-001; contains ≥40 entries",
+    "Each entry contains: term (source language), translation or preserve directive, part-of-speech, and a notes field for context or usage examples",
+    "Separate sections for: general heritage/art-history terminology, proper nouns (artist names, place names, period names) with preserve/transliterate annotation, transliteration conventions (if applicable for the script pair), and do-not-translate list",
+    "Reviewed and signed off by a qualified bilingual reviewer (native or near-native target language competence with heritage-translation experience)",
+    "Glossary version and reviewer sign-off recorded in the file header"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 Architecture — glossaries)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (glossary-001)",
+    "multilingual-museum-labels-schema-001 (glossarySchema must be in place)",
+    "Getty AAT/ULAN/TGN (terminology reference)",
+    "Dublin Core (metadata terminology)"
+  ],
+  "output": "glossaries/<src>-<tgt>.yaml — initial glossary for the first language pair, validated against glossarySchema",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

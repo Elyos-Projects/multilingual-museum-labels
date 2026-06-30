@@ -1,0 +1,35 @@
+{
+  "id": "multilingual-museum-labels-glossary-002",
+  "title": "Extend glossary + guides to a 2nd language pair",
+  "project": "multilingual-museum-labels",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "translation", "terminology", "glossary"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "M1 requires the pipeline and glossaries to cover ≥2 language pairs so the project is not limited to a single translation target. The first language pair was established in glossary-001. This task builds a second glossary YAML using the same structure and schema, and ensures the plain-language guide and cultural-sensitivity guide reference any language-pair-specific considerations for the new target language. A qualified bilingual reviewer for the new language pair must sign off.",
+  "objective": "Build an initial glossary YAML for a 2nd language pair (source language → second target language) with ≥40 entries, mirroring the structure of glossary-001: heritage/art-history terminology, proper nouns with preserve/transliterate conventions, a transliteration table where applicable, and a do-not-translate list. Update the plain-language guide and cultural-sensitivity guide with any language-pair-specific notes. Obtain qualified bilingual reviewer sign-off for the new language pair.",
+  "acceptanceCriteria": [
+    "YAML file validated against glossarySchema from schema-001; contains ≥40 entries for a second, distinct language pair not covered by glossary-001",
+    "Each entry contains: term (source language), translation or preserve directive, part-of-speech, and notes for context or usage examples",
+    "Separate sections for: general heritage/art-history terminology, proper nouns with preserve/transliterate annotation, transliteration conventions (if applicable for the script pair), and do-not-translate list",
+    "Plain-language guide (guide-001) and cultural-sensitivity guide (guide-002) updated with any language-pair-specific plain-language targets or sensitivity considerations for the new target language",
+    "Reviewed and signed off by a qualified bilingual reviewer for the new language pair (native or near-native target language competence with heritage-translation experience); glossary version and sign-off recorded in the file header"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§6 Architecture — glossaries)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (glossary-002)",
+    "multilingual-museum-labels-glossary-001 (first language pair — reference structure)",
+    "multilingual-museum-labels-schema-001 (glossarySchema must be in place)",
+    "Getty AAT/ULAN/TGN (terminology reference)",
+    "Dublin Core (metadata terminology)"
+  ],
+  "output": "glossaries/<src>-<tgt2>.yaml — initial glossary for the second language pair, validated against glossarySchema; updated guides/plain-language.md and guides/cultural-sensitivity.md if language-specific notes are needed",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}

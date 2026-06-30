@@ -1,0 +1,34 @@
+{
+  "id": "multilingual-museum-labels-license-002",
+  "title": "License-check tooling (object record ↔ deliverable metadata) enforced in CI",
+  "project": "multilingual-museum-labels",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["museums", "heritage", "licensing", "tooling", "compliance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M0 relied on a manual structural check plus manual license review. M1 requires automated license-check tooling enforced in CI that validates every deliverable's metadata against its object record. This ensures no description or translation reaches delivery with a missing credit line, incompatible output license, or absent provenance. The tooling builds on schema-001 (content schemas) and rights-001 (rights model policy) and becomes the authoritative CI gate from M1 onward.",
+  "objective": "Build a license-check script that, for each description and translation deliverable, validates: the required attribution/credit line is present and matches the object record; the output license is present, compatible with the source rights, and not more permissive than the source; any required disclaimer is present; and the provenance record links the deliverable to its object record version. Wire the script into pnpm test so CI fails on any deliverable that fails the check.",
+  "acceptanceCriteria": [
+    "License-check script validates each deliverable's metadata against its object record and fails CI if the credit line, required disclaimer, or provenance record is missing",
+    "Script fails CI if the output license is incompatible with or more permissive than the source rights recorded in the object record's factsRights block",
+    "Script covers both source-language descriptions and translations; for translations, the output license must also be compatible with the source description's license",
+    "Script follows the agent-neutral core pattern: no vendor-specific logic; lives in packages/ or scripts/ consistent with existing project structure",
+    "pnpm build && pnpm test && pnpm lint all pass; a changeset is added and commits are signed off (DCO)"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§7 Data, licensing & compliance; §8 Quality — license check step)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (license-002 acceptance criteria)",
+    "multilingual-museum-labels-schema-001 (content schemas — must be in place)",
+    "multilingual-museum-labels-rights-001 (rights model policy)",
+    "C:/code/elyos/CLAUDE.md (architecture: no vendor logic in core)"
+  ],
+  "output": "PR adding license-check script wired into pnpm test; CI fails on any deliverable with missing/incompatible license, credit line, disclaimer, or provenance",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

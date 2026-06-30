@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-outcomes-001",
+  "title": "Outcome tracking: factual-defect log + sensitivity-escape audit + feedback",
+  "project": "multilingual-museum-labels",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "outcomes", "quality", "maintenance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Success for this project is measured in outcomes delivered to real beneficiaries, not PRs merged. M3 requires a maintained outcome-tracking log per delivered set. The project's success metrics include factual-defect rate (target: 0), sensitivity-handling escapes (target: 0), and partner/visitor usefulness feedback. Without a maintained log, the project cannot demonstrate its outcomes or detect and fix post-delivery errors. This task depends on delivery-001 providing the first delivered set.",
+  "objective": "Establish and maintain an outcome-tracking log per delivered label set: capture display/adoption status, post-delivery factual defects (wrong date/maker/material/provenance discovered after delivery), sensitivity-handling escapes (sensitive item delivered without required escalated review), and partner/visitor usefulness feedback. Update the log after each delivery (delivery-001, scale-001) and after each partner check-in. Feed results back into PLAN.md success metrics.",
+  "acceptanceCriteria": [
+    "Outcome-tracking log created as a structured dataset (YAML or JSON) with per-delivered-set records capturing: delivery date, partner museum name, object count, target language(s), adoption/display confirmation status, and a list of any post-delivery factual defects",
+    "Sensitivity-escape audit field included per set: counts of sensitive-heritage or contested-legal items that reached delivery without required escalated review (target: 0); any non-zero entry triggers an incident record",
+    "Partner feedback field: qualitative partner-reported usefulness (positive/neutral/negative with note); optional visitor-feedback reference if the partner collected it (no PII)",
+    "Log updated after each delivery event and each partner check-in; update process documented",
+    "Factual-defect rate and sensitivity-escape count visible and consistent with PLAN.md §4 success metrics; log feeds periodic project reporting"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§4 Success metrics — outcome metrics table; §15 Sustainability)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (outcomes-001 acceptance criteria)",
+    "multilingual-museum-labels-delivery-001 (first delivery — must be complete to populate the log)",
+    "multilingual-museum-labels-escalation-001 (sensitivity-escape definition)"
+  ],
+  "output": "data/outcomes-log.yaml — per-delivered-set outcome records including adoption status, defect log, sensitivity-escape audit, and partner feedback",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

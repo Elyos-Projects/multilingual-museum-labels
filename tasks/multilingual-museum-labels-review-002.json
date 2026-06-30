@@ -1,0 +1,33 @@
+{
+  "id": "multilingual-museum-labels-review-002",
+  "title": "Reviewer-handoff template + COI/independence + sign-off recording",
+  "project": "multilingual-museum-labels",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["museums", "heritage", "review", "governance", "quality"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Reviewer sign-off must be recorded in PRs with independence and COI declarations. A standardised handoff template ensures that (a) the drafter does not self-review, (b) the reviewer's qualifications and COI are declared, (c) the full checklist is attached, and (d) the sign-off is persisted in review.yaml for audit. This task depends on the reviewer checklist (review-001).",
+  "objective": "Create a reviewer-handoff template that includes: the task/object/description/language being reviewed; reviewer name and qualification statement (domain-aware or qualified bilingual); COI declaration (reviewer is independent of the drafting step); completed reviewer checklist reference (review-001); and the sign-off block (approved / approved-with-changes / rejected) with the reviewer's reasoning, which is pasted into the PR description and persisted in review.yaml.",
+  "acceptanceCriteria": [
+    "Template includes: task/object/description/language identifier, reviewer name and qualification role (domain-aware reviewer or qualified bilingual reviewer)",
+    "Includes an explicit COI/independence declaration: 'I am not the drafter of this description/translation and have no undisclosed conflict of interest'",
+    "Includes a completed-checklist confirmation reference (review-001 checklist) with a field for any noted issues",
+    "Includes a sign-off block with three options: APPROVED, APPROVED WITH CHANGES (list required changes), or REJECTED (state reason); all options require a brief reasoning statement",
+    "Specifies that the completed handoff is pasted into the PR description and the sign-off outcome is recorded in review.yaml under the appropriate object/description/translation entry",
+    "Is consistent with the sign-off recording pattern described in PLAN.md §8 and can be used for both source-description reviews and translation reviews"
+  ],
+  "resources": [
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/PLAN.md (§8 Quality — reviewer independence)",
+    "C:/code/elyos/planning/projects/multilingual-museum-labels/TASKS.md (review-002)",
+    "multilingual-museum-labels-review-001 (reviewer checklist — must exist first)"
+  ],
+  "output": "templates/reviewer-handoff.md — reviewer-handoff template for domain-aware and bilingual reviewer sign-off",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC BY 4.0"
+}
